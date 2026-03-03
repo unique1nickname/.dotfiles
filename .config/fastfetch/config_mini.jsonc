@@ -1,0 +1,61 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	"source": "linux_small",
+    },
+    "display": {
+        "separator": " ",
+        "key": {
+        	"width": 9
+        }
+    },
+    "modules": [
+		{
+            "type": "title",
+            "keyWidth": 10,
+            "color": {
+            	"user": "blue",
+            	"host": "blue",
+            },
+            //"format": "{#blue}user{#white}@{#blue}{2}"
+        },
+        {
+            "type": "os",
+            "key": "os ",
+            "keyColor": "\u001b[31m",  // = color4
+            "format": "{id}",
+        },
+        {
+            "type": "kernel",
+            "key": "kernel",
+            "keyColor": "\u001b[32m",
+            "format": "{release~0,-7}",
+        },
+        {
+            "type": "shell",
+            "key": "shell",
+            "keyColor": "\u001b[33m",
+            "format": "{1}", 
+        },
+        {
+            "type": "terminal",
+            "key": "term",
+            "keyColor": "\u001b[34m",
+            "format": "{1}",
+        },
+        {
+            "type": "wm",
+            "format": "{1}",
+            "key": "wm",
+            "keyColor": "\u001b[35m", 
+        },
+		{
+		    "type": "colors",
+		    //"paddingLeft": 2,
+		    "symbol": "square",
+		    //"key": "\u001b[31mc\u001b[32mo\u001b[33ml\u001b[34mo\u001b[35mr",
+			"key": "color",
+		    "keyColor": "\u001b[36m",
+		},
+    ]
+}

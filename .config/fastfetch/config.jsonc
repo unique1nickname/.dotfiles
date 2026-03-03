@@ -1,0 +1,98 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+    	//"source": "~/.config/fastfetch/im/photo15.jpg",
+    	"source": "~/.config/fastfetch/im/new5.png",
+
+    	"type": "kitty",
+    	"height": 16,
+    	"padding": {
+    		"top": 1,
+    		"left": 2,
+    	}
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10,
+            "color": {
+            	"user": "blue",
+            	"host": "blue",
+            },
+            //"format": "{#blue}user{#white}@{#blue}{2}"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "34",  // = color4
+            "format": "{2} {9}",
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "34",
+        },
+        {
+            "type": "packages",
+            //"format": "{} (all)",
+            "key": "󰏖 ",
+            "keyColor": "34",  
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+        	"type": "de",
+        	"key": " ",
+            "keyColor": "34",         	
+        },
+        {
+            "type": "wm",
+            "format": "{1} ({3})", // if niri
+            "key": " ",
+            "keyColor": "34", 
+        },
+		{
+			"type": "cpu",
+			"format": "{1}",
+			"key": " ",
+            "keyColor": "34", 			
+		},
+		{
+			"type": "gpu",
+			"format": "{1} {2}",			
+			"key": "󱄄 ",
+            "keyColor": "34", 						
+		},
+		{
+			"type": "memory",
+			//"format": "{5}",
+			"key": "󰍛 ",
+            "keyColor": "34", 			
+		},
+		{
+			"type": "disk",
+			//"format": "{1} / {2} ({3}) {9}",			
+			"key": " ",
+            "keyColor": "34", 						
+		},
+        "break",
+        {
+            "type": "colors",
+        },
+        "break",
+        "break",
+    ]
+}

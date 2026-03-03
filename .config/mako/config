@@ -1,0 +1,22 @@
+# Colors
+
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #313244
+border-radius=8
+outer-margin=0,0,25,0
+
+[urgency=high]
+border-color=#fab387
+
+[app-name="ibus"]
+invisible=1
+history=0
+
+[category=sound-change-notif]
+anchor=bottom-center
+group-by=category
+format=%b
+width=180
+font=monospace 16
