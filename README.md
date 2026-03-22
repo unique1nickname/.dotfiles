@@ -16,6 +16,7 @@ my dotfiles for niri
 - starship
 - lazygit
 - lazydocker
+- wlctl (impala fork for networkmanager)
 
 ## wm
 - niri
