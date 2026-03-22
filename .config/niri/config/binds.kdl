@@ -7,6 +7,7 @@ binds {
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/scripts/wallpapers.sh"; }
     // Super+Ctrl+V hotkey-overlay-title="Clipboard: Open" { spawn "dms" "ipc" "call" "clipboard" "open"; }
     Super+X hotkey-overlay-title="Power Menu: Toggle" { spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/scripts/power.sh"; }
+    Mod+N hotkey-overlay-title="Network Manager TUI" { spawn "kitty" "--title" "network-tui" "wlctl"; }
 
     XF86AudioLowerVolume allow-when-locked=true { spawn "sh" "-c" "wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 3%- && notify-send -e 'volume' \"$(wpctl get-volume @DEFAULT_AUDIO_SINK@)\" -t 1000 -c sound-change-notif"; }
     // XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
