@@ -20,3 +20,6 @@ group-by=category
 format=%b
 width=180
 font=monospace 16
+
+[app-name=niri summary~="Screenshot captured"]
+default-timeout=2500
