@@ -5,7 +5,7 @@ binds {
     // Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "sh" "-c" "pkill fuzzel || fuzzel"; }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" { spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/scripts/wallpapers.sh"; }
-    // Super+Ctrl+V hotkey-overlay-title="Clipboard: Open" { spawn "dms" "ipc" "call" "clipboard" "open"; }
+    Super+Ctrl+V hotkey-overlay-title="Clipboard: Open" { spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/scripts/clipboard.sh"; }
     Super+X hotkey-overlay-title="Power Menu: Toggle" { spawn "sh" "-c" "pkill fuzzel || ~/.config/fuzzel/scripts/power.sh"; }
     Mod+N hotkey-overlay-title="Network Manager TUI" { spawn "kitty" "--title" "network-tui" "wlctl"; }
 
