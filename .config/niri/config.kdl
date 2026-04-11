@@ -205,6 +205,8 @@ environment {
 spawn-at-startup "waybar"
 spawn-at-startup "swayidle" "-w"
 spawn-sh-at-startup "swaybg -i ~/.config/niri/current_wallpaper -m fill"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store -max-items 75"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store -max-items 75"
 hotkey-overlay {
     skip-at-startup
 }
