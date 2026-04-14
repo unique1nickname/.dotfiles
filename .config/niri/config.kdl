@@ -311,7 +311,7 @@ window-rule {
 	default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 window-rule {
-    match app-id="^ru-turikhay-tlauncher-bootstrap-Bootstrap$"
+    match app-id="^org-springframework-boot-loader-PropertiesLauncher$"
     open-floating true
 }
 window-rule {
