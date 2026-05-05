@@ -1,7 +1,7 @@
 # dotfiles
 my dotfiles for niri
 
-![Static Badge](https://img.shields.io/badge/Fedora-00578E?style=flat&logo=fedora&logoColor=white&link=https%3A%2F%2Fniri-wm.github.io%2Fniri%2F) ![Static Badge|47](https://img.shields.io/badge/Niri-d35843?style=flat&logo=niri&logoColor=white&link=https%3A%2F%2Ffedoraproject.org%2F)
+![Static Badge](https://img.shields.io/badge/Fedora-00578E?style=flat&logo=fedora&logoColor=white) ![Static Badge|47](https://img.shields.io/badge/Niri-d35843?style=flat&logo=niri&logoColor=white)
 
 ## term
 - kitty
