@@ -21,7 +21,7 @@
         },
         {
             "type": "os",
-            "key": "os ",
+            "key": "distro ",
             "keyColor": "\u001b[31m",  // = color4
             "format": "{id}",
         },

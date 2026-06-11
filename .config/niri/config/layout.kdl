@@ -1,5 +1,6 @@
 layout {
-	gaps 4
+	// gaps 4
+	gaps 10
 	border {
 		width 2
 	}

@@ -33,6 +33,7 @@
     },
     "niri/window": {
         "format": "{}",
+        "max-length": 175,
         "rewrite": {
             "(.*) — Zen Browser": "$0"
         }

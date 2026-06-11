@@ -2,8 +2,8 @@
 
 #!/usr/bin/env bash
 
-SELECTION="$(printf "󰌾  Lock\n󰤄  Suspend\n󰈆  Log out\n󰑐  Reboot\n󰐥  Shutdown" | fuzzel --dmenu -l 5 --placeholder  "$(uptime -p)" --hide-prompt --width=12)" || exit 0 
-
+SELECTION="$(printf "󰌾  Lock\n󰤄  Suspend\n󰈆  Log out\n󰑐  Reboot\n󰐥  Shutdown" | fuzzel --dmenu -l 5 --placeholder  "$(uptime -p)" --hide-prompt --width=14)" || exit 0 
+# width=12
 case $SELECTION in
 	*"Lock")
 		swaylock;;
