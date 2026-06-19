@@ -60,7 +60,7 @@
         },
         {
             "type": "wm",
-            "format": "{1} ({3})", // if niri
+            //"format": "{1} ({3})", // if niri
             "key": " ",
             "keyColor": "34", 
         },

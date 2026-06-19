@@ -336,6 +336,10 @@ window-rule {
 		xray false
 	}
 }
+window-rule {
+	match app-id="^AmneziaVPN$"
+	open-floating true
+}
 layer-rule {
     match namespace="^launcher$"
     match namespace="^rofi$"
