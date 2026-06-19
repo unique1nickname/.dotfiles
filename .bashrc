@@ -2,12 +2,12 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+  . /etc/bashrc
 fi
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
@@ -16,11 +16,11 @@ export PATH
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
-    for rc in ~/.bashrc.d/*; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
+  for rc in ~/.bashrc.d/*; do
+    if [ -f "$rc" ]; then
+      . "$rc"
+    fi
+  done
 fi
 unset rc
 
@@ -36,11 +36,11 @@ eval "$(zoxide init bash)"
 eval "$(zoxide init bash --cmd cd)"
 
 function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  yazi "$@" --cwd-file="$tmp"
+  IFS= read -r -d '' cwd <"$tmp"
+  [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+  rm -f -- "$tmp"
 }
 
 export EDITOR=micro
@@ -56,3 +56,13 @@ alias lla='lsd -la'
 alias lt='lsd --tree'
 
 alias music-dl='yt-dlp -x --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata'
+
+alias djmm='python manage.py makemigrations'
+alias djm='python manage.py migrate'
+alias djrs='python manage.py runserver'
+alias djcsu='python manage.py createsuperuser'
+
+alias update='sudo dnf upgrade --refresh && flatpak update'
+alias install='sudo dnf install'
+alias search='dnf search'
+alias remove='sudo dnf remove'
